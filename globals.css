@@ -1,0 +1,21 @@
+/* Typewriter Animation */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  99% {
+    border-right: 3px solid #fff;
+  }
+  100% {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+/* Apply typewriter animation to a specific class */
+.typewriter {
+  overflow: hidden; /* Hide the text as it animates */
+  white-space: nowrap; /* Prevent text from wrapping */
+  border-right: 3px solid #fff; /* Cursor effect */
+  animation: typewriter 2.5s steps(30) 0s 1 normal both; /* Adjust timing and steps for effect */
+}
